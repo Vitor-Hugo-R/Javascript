@@ -1,6 +1,26 @@
-.pontotime1{
-    color: green;
+*{
+    margin: 0;
+    padding: 0;
 }
-.pontotime2{
-    color: red;
+.container{
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.time1{
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.img1{
+    background-image: url(../css/img/Brasil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 125px;
+    margin: auto;
+    margin-top: 20px;
 }

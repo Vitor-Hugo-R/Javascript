@@ -1,8 +1,19 @@
-const placarb = document.getElementsByClassName("placarmaisb");
-placarb.addEventListener("click", function mais(){
-const mais = Number(document.getElementsByClassName("pontotime1"));
-let pontomais = 0;
+const placarb = document.getElementById("placarmaisb");
+let pontotimeB = 0;
+let pontotimeI = 0;
 
-mais.textContent = pontomais++;
-
+placarb.addEventListener("click", function (){
+const pontob = document.getElementById("pontotime1");
+pontotimeB++;
+pontob.innerHTML = pontotimeB;
+})
+placarb.addEventListener("click", function (){
+    const pontob = document.getElementById("pontotime1");
+    pontotimeB--;
+    pontob.innerHTML = pontotimeB;
+    if (pontotimeB < 0) {
+        pontotimeB = 0;
+    }
+    pontob.innerHTML = pontotimeB;
+    
 })
